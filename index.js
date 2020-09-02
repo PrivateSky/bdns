@@ -1,1 +1,4 @@
-module.exports = require("./lib/BDNS");
+module.exports.createBDNS = ()=>{
+    const BDNS = require("./lib/BDNS");
+    return new BDNS();
+}
