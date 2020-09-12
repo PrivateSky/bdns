@@ -1,4 +1,4 @@
-module.exports.createBDNS = ()=>{
-    const BDNS = require("./lib/BDNS");
-    return new BDNS();
+const BDNS = require("./lib/BDNS");
+if (typeof $$.bdns === "undefined") {
+    $$.bdns = new BDNS();
 }
